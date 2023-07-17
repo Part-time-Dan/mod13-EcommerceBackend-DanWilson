@@ -6,11 +6,15 @@ const ProductTag = require('./ProductTag');
 
 // Products belongsTo Category
 Product.belongsTo(Category, {
-  foreignKey: 'category_id'
-})
+  foreignKey: 'category_id',
+  onDelete: 'CASCADE'
+});
 
 // Categories have many Products
-Category.hasMany(Product)
+Category.hasMany(Product, {
+  foreignKey: 'category_id',
+  onDelete: 'CASCADE'
+});
 
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
@@ -19,9 +23,8 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
     unique: false
   },
-  as: 'product_tags',
-  onDelete: 'CASCADE' 
-})
+  as: 'product_tags', 
+});
 
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
@@ -31,7 +34,7 @@ Tag.belongsToMany(Product, {
     unique: false
   },
   as: 'tags'
-})
+});
 
 // foreign key relationships must match the column created in the respective models. Find FK names in the seed tables
 
