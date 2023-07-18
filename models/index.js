@@ -20,20 +20,16 @@ Category.hasMany(Product, {
 Product.belongsToMany(Tag, {
   foreignKey: 'product_id',
   through: {
-    model: ProductTag,
-    unique: false
-  },
-  as: 'product_tags', 
+    model: ProductTag
+  }
 });
 
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   foreignKey: 'tag_id',
   through: {
-    model: ProductTag,
-    unique: false
-  },
-  as: 'tags'
+    model: ProductTag
+  }
 });
 
 // foreign key relationships must match the column created in the respective models. Find FK names in the seed tables
