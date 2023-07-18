@@ -38,7 +38,7 @@ Specific criteria for this project were to link a handful of models using Sequel
 
 Clone this repository to a development environment like VScode. Install dependencies listed above.
 
-Start up a MySQL connection `mysql -u root -p` and enter personal credentials. A config file is provided to handle .env files as well.
+Start up a MySQL connection `mysql -u root -p` and enter personal credentials. A config file is provided to handle ".env" files as well.
 
 **WARNING: VERIFY YOU DO NOT CURRENTLY HAVE AN ACTIVE DATABASE CALLED "ecommerce_db" BEFORE CONTINUING TO THE NEXT STEP.**
 
@@ -50,7 +50,7 @@ Set up should be complete. Run `node server.js` from the root directory. The con
 
 - http://<area>localhost:3001/api/categories/
 - http://<area>localhost:3001/api/tags/
-- http://<area>localhost:3001/api/products/ (Note: POST and PUT methods were provided as starter code for this assignment)
+- http://<area>localhost:3001/api/products/ (Note: POST and PUT methods were provided as starter code for "products")
 
 A 200 status with JSON objects or messages should be returned in the Preview window. For "GET by id", PUT and DELETE methods, include the id number as the search parameter after the last slash in the address (Example- to DELETE category id: 4 "Hats", address should appear as: DEL http://<area>localhost:3001/api/categories/4). 
 
