@@ -112,4 +112,4 @@ License information here: [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Demo
 
-https://github.com/Part-time-Dan/mod13-EcommerceBackend-DanWilson/assets/126934952/f8a98b4e-8aa1-4ff1-9299-b428dbdd3acc
+https://github.com/Part-time-Dan/mod13-EcommerceBackend-DanWilson/assets/126934952/11389b65-b49b-4127-ab6e-c8c98b0f794f
